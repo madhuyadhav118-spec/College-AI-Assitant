@@ -60,3 +60,60 @@ to access college information through an intelligent chatbot and a secure web ap
 - System Architecture
 - Technology Stack Selection
 - Project Folder Structure
+- ## Current Progress
+
+### ✅ Day 1 - Project Planning & Setup
+
+* Project Planning
+* System Architecture Design
+* Technology Stack Selection
+* Project Folder Structure
+* Git & GitHub Setup
+* Initial Project Documentation
+
+---
+
+### ✅ Day 2 - Database Planning & Design
+
+* Learned Database Fundamentals
+* Understood Tables, Records, and Columns
+* Studied Primary Keys and Foreign Keys
+* Learned Database Relationships (One-to-One, One-to-Many, Many-to-Many)
+* Identified Main System Entities
+
+  * Users
+  * Students
+  * Faculty
+  * Departments
+  * Courses
+  * Subjects
+  * Attendance
+  * Results
+  * Notices
+  * FAQs
+  * Knowledge Base
+  * Chat History
+* Designed the Initial Entity Relationship (ER) Diagram
+* Planned the Database Structure for a Production-Ready Application
+* Uploaded Project Documentation and ER Diagram to GitHub
+
+---
+
+## Next Milestone
+
+### 🚀 Day 3 - MySQL Database Development
+
+* Create MySQL Database
+* Design Database Tables
+* Define Primary Keys & Foreign Keys
+* Build Database Relationships
+* Prepare Database for Backend Integration
+
+---
+
+## Project Status
+
+**Current Phase:** Database Planning & Design
+
+**Progress:** 2 / 30 Days Completed (≈7%)
+
