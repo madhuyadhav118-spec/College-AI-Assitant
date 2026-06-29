@@ -129,9 +129,20 @@ to access college information through an intelligent chatbot and a secure web ap
 - Verified table structure using DESCRIBE
 ## ✅ Day 4 Completed
 
-- Learned Primary Key
-- Learned Foreign Key
-- Learned One-to-One Relationship
-- Created Students Table
-- Connected Students Table with Users Table
-- Tested Database Relationships
+### Database
+
+- Created Students table
+- Connected Students table with Users table
+- Implemented Foreign Key relationship
+
+### Learning
+
+- Primary Key
+- Foreign Key
+- One-to-One Relationship
+- Referential Integrity
+
+### GitHub
+
+- Updated schema.sql
+- Pushed latest database changes
