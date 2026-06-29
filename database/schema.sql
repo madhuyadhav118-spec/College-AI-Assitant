@@ -38,3 +38,53 @@ CREATE TABLE users (
     ON UPDATE CURRENT_TIMESTAMP
 
 );
+
+-- ===========================================
+-- STUDENTS TABLE
+-- Stores student academic details
+-- ===========================================
+
+CREATE TABLE students (
+
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+
+    user_id INT NOT NULL,
+
+    roll_number VARCHAR(30) NOT NULL UNIQUE,
+
+    admission_number VARCHAR(30) UNIQUE,
+
+    department VARCHAR(100) NOT NULL,
+
+    year INT NOT NULL,
+
+    semester INT NOT NULL,
+
+    section VARCHAR(10),
+
+    gender VARCHAR(10),
+
+    date_of_birth DATE,
+
+    address TEXT,
+
+    parent_name VARCHAR(100),
+
+    parent_phone VARCHAR(15),
+
+    blood_group VARCHAR(5),
+
+    admission_date DATE,
+
+    status ENUM('ACTIVE','GRADUATED','SUSPENDED')
+        DEFAULT 'ACTIVE',
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (user_id)
+        REFERENCES users(user_id)
+
+);
