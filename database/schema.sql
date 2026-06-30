@@ -88,3 +88,30 @@ CREATE TABLE students (
         REFERENCES users(user_id)
 
 );
+
+-- ===========================================
+-- DEPARTMENTS TABLE
+-- ===========================================
+
+CREATE TABLE departments (
+
+    department_id INT AUTO_INCREMENT PRIMARY KEY,
+
+    department_name VARCHAR(100) NOT NULL UNIQUE,
+
+    department_code VARCHAR(20) NOT NULL UNIQUE,
+
+    hod_name VARCHAR(100),
+
+    email VARCHAR(100),
+
+    phone VARCHAR(15),
+
+    building_name VARCHAR(100),
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    ON UPDATE CURRENT_TIMESTAMP
+
+);
