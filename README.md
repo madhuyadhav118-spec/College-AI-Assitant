@@ -161,3 +161,17 @@ to access college information through an intelligent chatbot and a secure web ap
 - Database Normalization
 - Data Redundancy
 - Production Database Design
+
+- ## ✅ Day 6 Completed
+
+### Database
+
+- Created Faculty table
+- Connected Faculty table with Users
+- Tested Faculty table
+
+### Learning
+
+- User Roles
+- Database Relationships
+- Faculty Management
