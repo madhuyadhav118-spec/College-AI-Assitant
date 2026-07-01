@@ -115,3 +115,40 @@ CREATE TABLE departments (
     ON UPDATE CURRENT_TIMESTAMP
 
 );
+
+-- ===========================================
+-- FACULTY TABLE
+-- ===========================================
+
+CREATE TABLE faculty (
+
+    faculty_id INT AUTO_INCREMENT PRIMARY KEY,
+
+    user_id INT NOT NULL,
+
+    employee_id VARCHAR(30) NOT NULL UNIQUE,
+
+    department VARCHAR(100) NOT NULL,
+
+    designation VARCHAR(100),
+
+    qualification VARCHAR(100),
+
+    experience INT,
+
+    joining_date DATE,
+
+    office_phone VARCHAR(15),
+
+    status ENUM('ACTIVE','INACTIVE')
+        DEFAULT 'ACTIVE',
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (user_id)
+        REFERENCES users(user_id)
+
+);
